@@ -1,1 +1,1 @@
-# clockofclockspython
+My attempt to replicate https://github.com/githyperplexed/clock-of-clocks in Python!
