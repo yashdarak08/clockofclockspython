@@ -13,10 +13,8 @@ pip install -r requirements.txt
 ```bash
 python src/app.py
 ```
-
+ 
 ## Project Structure
 
 - `src/` - Main application code
-- `tests/` - Unit tests
 - `config.py` - Configuration settings
-- `examples/` - Usage examples
