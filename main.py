@@ -1,7 +1,7 @@
 import pygame
 import sys
 import math
-import digit
+from . import constants
 from datetime import datetime as dt
 
 frame_width = 1024
@@ -26,8 +26,8 @@ def draw_digit(screen, num ,colour, x, y, r, w=2):
         cy = y + row * (2 * r + gap)
         pygame.draw.circle(screen, colour, (cx, cy), r, w)
 
-        symbol = digit.digits[num][i]
-        angles = digit.rotation[symbol]
+        symbol = constants.DIGITS[num][i]
+        angles = constants.ROTATIONS[symbol]
         hand1_x = cx + r * math.cos(math.radians(angles[0]))
         hand1_y = cy + r * math.sin(math.radians(angles[0]))
         pygame.draw.line(screen, GREEN, (cx, cy), (hand1_x, hand1_y), width=2)
